@@ -1,0 +1,62 @@
+.App {
+  display: grid;
+  place-items: center;
+  font-size: 1.4em;
+  background-color: #ffcd29;
+}
+
+.child-one {
+  display: grid;
+  place-items: center;
+  border: 4px solid black;
+  background-color: #f24822;
+  color:white;
+  width: 70%;
+  font-size: 0.9em;
+}
+
+.child-two {
+  font-size: 0.9em;
+  display: grid;
+  place-items: center;
+  border: 4px solid black;
+  background-color: #9746ff;
+  color: white;
+  width: 80%;
+}
+.child-three {
+  font-size: 0.9em;
+  display: grid;
+  place-items: center;
+  border: 4px solid black;
+  background-color: #0e99ff;
+  color:white;
+  width: 80%;
+}
+.child-four {
+  font-size: 0.9em;
+  display: grid;
+  place-items: center;
+  border: 4px solid black;
+  background-color: #ffa628;
+  color:white;
+  width: 80%;
+}
+.child-five {
+  font-size: 0.9em;
+  display: grid; 
+  place-items: center;
+  border: 4px solid black;
+  background-color: #11ae5d;
+  color:white;
+  width: 80%;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
