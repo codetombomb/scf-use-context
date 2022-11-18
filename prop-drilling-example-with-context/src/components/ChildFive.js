@@ -1,4 +1,8 @@
-function ChildFive({user, setUser}) {
+import { useContext } from 'react';
+import { UserContext } from '../context/UserProvider'
+
+function ChildFive() {
+  const {user, setUser} = useContext(UserContext)
 
   const handleSetUserClick = () => {
     setUser({

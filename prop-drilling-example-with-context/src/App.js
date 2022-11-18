@@ -1,8 +1,12 @@
 import './App.css';
 import ChildOne from './components/ChildOne';
-// import { useState } from 'react';
+import { useContext } from 'react';
+import { UserContext } from './context/UserProvider'
+
 
 function App() {
+  const {user} = useContext(UserContext)
+  console.log(user)
   // const [user, setUser] = useState({
   //   name: "John Lennon",
   //   username: "🦭🦭IAmTheWalrusGooGooGJoob🦭🦭",
@@ -27,7 +31,7 @@ function App() {
         <h3>It is responsible for rendering the <span style={{color: "#f24822"}}>ChildOne</span> component.</h3>
         <p>The `user` state originates here and is passed 👇 to the ChildOne component</p>
 
-      <ChildOne user={user} setUser={setUser}/>
+      <ChildOne />
     </div>
   );
 }
